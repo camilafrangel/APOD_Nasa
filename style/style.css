@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+body {
+    font-family: 'Audiowide', cursive;
+    background: #03122C;
+    color: #E5E5E5;
+    font-size: 2em;
+}
+footer {
+    background: #EEEEEE;
+}
