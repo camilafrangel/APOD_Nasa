@@ -2,10 +2,89 @@
 
 body {
     font-family: 'Audiowide', cursive;
-    background: #03122C;
+    background-image: url(https://images.pexels.com/photos/4359071/pexels-photo-4359071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
     color: #E5E5E5;
     font-size: 2em;
 }
+a , button {
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.tituloPrincipal {  
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 95%;
+   padding: 20px;
+   margin-top: 20px;
+   font-size: 80px;
+}
+.descricao {
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    padding: 15px;
+    font-size: 2.2rem;
+}
+.descricao>h2{
+    width: 60%;
+}
+.linkDiscover {
+    color: #D03025;
+}
+.linkDiscover:hover{
+    color: #10C722;
+}
+.containerInputs { 
+    display: flex;
+    justify-content: center; 
+    margin-top: 60px;
+}
+.escolhaData {
+    margin: 0 20% 0 0;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+#botao , #inputData {
+    font-family: 'Audiowide' , cursive;
+    height: 40px;
+    width: 200px;
+    color: #03122C;
+    border-radius: 5px;
+}
+#botao {
+    background: #10C722;
+    border: #10C722;
+    margin-top: 20px;
+}
+#inputData {
+    background: #E5E5E5;
+    border: none;
+    padding-left: 10px;
+}
+#botao:hover {
+    background: #E5E5E5;
+    color: #03122C;
+}
 footer {
-    background: #EEEEEE;
+    font-size: 1.3rem;
+    color: #E5E5E5;
+    background: #03122C;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#linkFooter {
+    color: #E5E5E5;
+}
+#linkFooter:hover {
+    color: #D03025;
 }

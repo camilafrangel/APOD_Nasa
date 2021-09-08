@@ -13,27 +13,42 @@
 
 <body>
     <header>
-        <h1>NASA APOD</h1>
+        <div class="tituloPrincipal">
+            <h1>NASA APOD</h1>
+        </div>
+        <div class="descricao">
+            <h2>
+                <a href="https://apod.nasa.gov/apod/archivepix.html" class="linkDiscover">Discover the cosmos!</a> Each
+                day
+                a different image or photograph of our fascinating universe is featured,
+                along with a brief explanation written by a professional astronomer.
+            </h2>
+        </div>
     </header>
     <main>
-        <h2 class="descrição">
-            <a href="https://apod.nasa.gov/apod/archivepix.html">Discover the cosmos!</a> Each day a different image or
-            photograph of our fascinating universe is featured,
-            along with a brief explanation written by a professional astronomer.
-        </h2>
-        <div class="container">
-            <h3>Choose a date:</h3>
+        <div id="resultado">
+            <h2 id="tituloNasa"></h2>
+            <h4 id="dataNasa"></h4>
+            <p id="textoNasa"></p>
+            <div id="midiaNasa"></div>
+            <div id="copyNasa"></div>
+        </div>
+        <div class="containerInputs">
+            <div class="escolhaData">
+                <h3>Choose a date:</h3>
+            </div>
             <div class="inputs">
-                <input type="date">
-                <button>LET'S GO!</button>
+                <input type="date" id="inputData">
+                <button id="botao">LET'S GO!</button>
             </div>
         </div>
     </main>
     <footer>
         <h3>
-            2021 - <a href="https://www.linkedin.com/in/cafrangel/">Camila Rangel</a>
+            2021 - <a href="https://www.linkedin.com/in/cafrangel/" id="linkFooter">Camila Rangel</a>
         </h3>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./index.js"></script>
 </body>
 
