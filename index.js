@@ -8,11 +8,12 @@ async function sendRequest() {
     let inputData = $("#inputData").val();
     let apiKeyData = await fetch (`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${inputData}`);
     let data = await apiKeyData.json();
-    console.log (data);
+
+    
+    $('body').css('background-image', `url(${data.url})`);
+    $('body').css("background-repeat", "no-repeat");
+    $('body').css("background-size", "cover");
+    document.querySelector('.tituloPrincipal').innerText = data.title;
+    document.querySelector('#explicacao').innerText = data.explanation;
 }
 
-document.querySelector('#tituloNasa')
-document.querySelector('#dataNasa')
-document.querySelector('#textoNasa')
-document.querySelector('#midiaNasa')
-document.querySelector('#copyNasa')
